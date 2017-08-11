@@ -1,0 +1,6 @@
+<label>name : </label>
+<input type="text" name="name" #name (keyup)="0">
+<p>name with uppercase format:{{uppercase_expression | uppercase}}</p>
+<label>name1 : </label>
+<input type="text" name="name1" #name1 (keyup)="0">
+<p>name with lowercase format:{{name1.value | lowercase}}</p>                        

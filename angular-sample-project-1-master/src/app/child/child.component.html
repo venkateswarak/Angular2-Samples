@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Child</h3>
+  </div>
+  <div class="panel-body">
+
+<div class="row">
+  <div class="col-md-4"><h1>Name:{{parentname}}</h1>
+   <input ref-input [(ngModel)]="inputValue" (ngModelChange)="change($event)"><br/>
+        <button (click)="logText(input.value);">Update Log</button>
+        
+  </div>
+  <div class="col-md-2"><h1>Age:{{parentage}}</h1><input [(ngModel)]="parentage" (ngModelChange)="change1($event)"></div>
+  <div class="col-md-6"><h1>E-Mail:{{parentemail}}</h1><input [(ngModel)]="parentemail" (ngModelChange)="change2($event)"></div>
+</div>
+
+</div>
+</div>

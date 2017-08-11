@@ -1,0 +1,34 @@
+<div class="panel-body">
+ <div class="row">
+  <div class="col-md-4"><textarea [(ngModel)]="log" rows="3"></textarea><br/></div>
+  <div class="col-md-4"><label [class.selected]="cb1.checked">
+                <input #cb1 type="checkbox" value=" Selected" (change)="logCheckbox(cb1)"> Check Box
+            </label><h4>{{log1}}</h4></div>
+  <div class="col-md-4">
+      
+      <select #select [(ngModel)]="current" (change)="logDropdown(select.value)">
+            <option *ngFor="let item of list" [value]="item.id">{{item.name}}</option>
+             
+
+        </select>
+
+
+
+        <h4>{{log2}}</h4></div>
+</div> 
+
+            
+           
+    
+
+<button type="button" class="btn btn-secondary" (click)="show=True">Footer</button>
+  
+</div>
+<div *ngIf="show==True" class="panel-footer">
+  <h4>Parent Value Inherits: {{log}} </h4>
+ <h4> Check Box Value:  {{log1}}  </h4>
+ <h4> Drop-Down:  {{log2}}  </h4>
+</div>
+
+
+ 

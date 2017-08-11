@@ -1,0 +1,34 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+       <div class="input-group">
+       
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        
+        <input [(ngModel)]="name1" id="name1" type="text" class="form-control" name="name1" placeholder="Afroz" >
+      </div>
+      <h4> Updated name is <b>{{name1}} </b> </h4>
+    </div>
+     <div class="col-sm-4">
+        <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input [(ngModel)]="email" id="email" type="text" class="form-control" name="email" placeholder="Email">
+        </div>
+      <h4> Updated Email id <b> {{email}}</b></h4>
+     </div>
+      <div class="col-sm-4">
+        <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input [(ngModel)]="contact" id="contact" type="text" class="form-control" name="contact" placeholder="Contact">
+      </div>
+        <h4> Updated contact is <b> {{contact}} </b></h4>
+      </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+  <button type="button" class="btn btn-primary" > Submit </button>
+    </div>
+  </div>
+</div>
